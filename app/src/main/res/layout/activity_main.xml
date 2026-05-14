@@ -43,7 +43,6 @@
                     android:src="@drawable/cat" />
             </LinearLayout>
 
-            <!-- ✅ tabHorse를 tabRabbit 밖으로 꺼냄 -->
             <LinearLayout
                 android:id="@+id/tabHorse"
                 android:layout_width="match_parent"
