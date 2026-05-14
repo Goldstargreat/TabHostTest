@@ -5,12 +5,10 @@ import android.os.Bundle;
 import android.widget.TabHost;
 
 @SuppressWarnings("deprecation")
-public class MainActivity extends TabActivity
-{
+public class MainActivity extends TabActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -27,16 +25,15 @@ public class MainActivity extends TabActivity
         tabHost.addTab(tabSpecCat);
 
         // 3. 말 탭
-        TabHost.TabSpec tabSpecHorse = tabHost.newTabSpec("HORSE").setIndicator("토끼");
+        TabHost.TabSpec tabSpecHorse = tabHost.newTabSpec("HORSE").setIndicator("말");
         tabSpecHorse.setContent(R.id.tabHorse);
         tabHost.addTab(tabSpecHorse);
 
         // 4. 토끼 탭
-        TabHost.TabSpec tabSpecRabbit = tabHost.newTabSpec("RABBIT").setIndicator("말");
+        TabHost.TabSpec tabSpecRabbit = tabHost.newTabSpec("RABBIT").setIndicator("토끼");
         tabSpecRabbit.setContent(R.id.tabRabbit);
         tabHost.addTab(tabSpecRabbit);
 
-        // 현재 선택될 탭 설정 (0부터 시작하므로 1은 '고양이' 탭입니다)
         tabHost.setCurrentTab(0);
     }
 }
