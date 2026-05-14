@@ -14,22 +14,22 @@ public class MainActivity extends TabActivity {
 
         TabHost tabHost = getTabHost();
 
-        // 1. 강아지 탭 (Music)
+        // 1. 강아지 탭
         TabHost.TabSpec tabSpecDog = tabHost.newTabSpec("DOG").setIndicator("강아지");
         tabSpecDog.setContent(R.id.tabDog);
         tabHost.addTab(tabSpecDog);
 
-        // 2. 고양이 탭 (Singer)
+        // 2. 고양이 탭
         TabHost.TabSpec tabSpecCat = tabHost.newTabSpec("CAT").setIndicator("고양이");
         tabSpecCat.setContent(R.id.tabCat);
         tabHost.addTab(tabSpecCat);
 
-        // 3. 말 탭 (Album)
+        // 3. 말 탭
         TabHost.TabSpec tabSpecHorse = tabHost.newTabSpec("HORSE").setIndicator("토끼");
         tabSpecHorse.setContent(R.id.tabHorse);
         tabHost.addTab(tabSpecHorse);
 
-        // 4. 토끼 탭 (Album) -> 태그 중복 수정 ("tab3" -> "tab4")
+        // 4. 토끼 탭
         TabHost.TabSpec tabSpecRabbit = tabHost.newTabSpec("RABBIT").setIndicator("말");
         tabSpecRabbit.setContent(R.id.tabRabbit);
         tabHost.addTab(tabSpecRabbit);
